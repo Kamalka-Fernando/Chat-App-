@@ -1,0 +1,15 @@
+{
+  "name": "chale_chat",
+  "version": "1.0.0",
+  "description": "node.js socket.io ",
+  "main": "server.js",
+  "scripts": {
+    "start":"nodemon sever.js"
+  },
+  "author": "Kamalka Fernando",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.6",
+    "socket.io": "^3.0.0"
+  }
+}

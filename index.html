@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaleChat</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+        body{
+            padding: 0;
+            margin:20%;
+            display: flex;
+            justify-content: center;
+        }
+
+        #message-container {
+            width:Auto;
+            max-width:1000px;
+        }
+
+        #message-container div{
+            background-color: #ccc;
+            padding: 5px;
+        }
+
+        #message-container div:nth-child(2n){
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="message-container">
+        <form id="send-container">
+            <input type="text" id="message-input">
+            <button type="submit" id="send-button">Send</button>
+        </form>
+    </div>
+</body>
+</html>
